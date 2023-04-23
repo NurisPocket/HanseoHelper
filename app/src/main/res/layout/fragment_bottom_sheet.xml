@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.BottomSheet"
+    android:background="@drawable/spinner_bottom"
+    app:layout_behavior="com.google.android.material.bottomed.BottomSheetBehavior"
+    app:behavior_peekHeight="120dp"
+    app:behavior_hideable="false"
+    app:behavior_draggable="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/sr_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="서비스 항목 선택"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spin_service"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="50dp"
+        android:entries="@array/services"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#8C8B8B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/sr_title"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="110dp"
+        android:text="제목"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sr_titleinput"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/sr_payment"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/결제방법"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spin_payment"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="400dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="235dp"
+        android:entries="@array/paymentway"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/sr_departure"
+        android:layout_width="160dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="300dp"
+        android:text="출발지(선택 사항)"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sr_departinput"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="335dp"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/sr_destination"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="390dp"
+        android:text="도착지"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sr_destinationinput"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="425dp"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/sr_fee"
+        android:layout_width="143dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="480dp"
+        android:text="심부름비"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sr_feeinput"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:contentDescription="@string/원"
+        android:minHeight="48dp"
+        android:textAlignment="textEnd"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="EditableContentDescCheck" />
+
+
+    <Button
+        android:id="@+id/sr_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="590dp"
+        android:text="의뢰하기"
+        android:textStyle="bold"
+        app:backgroundTint="#8C8B8B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

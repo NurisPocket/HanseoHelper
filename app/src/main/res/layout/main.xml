@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/solid_button"
+        android:text="@string/서비스의뢰"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/hsu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.854" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/shopbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_state"
+        android:text="@string/장보기"
+        android:textColor="#757575"
+        android:fontFamily="@font/hsu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bugbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_state"
+        android:text="@string/벌레잡기"
+        android:textColor="#757575"
+        android:fontFamily="@font/hsu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/petbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="96dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="@font/hsu"
+        android:text="@string/반려동물케어"
+        android:textColor="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lessonbtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="@font/hsu"
+        android:text="@string/과외"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/etc"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="@font/hsu"
+        android:text="@string/기타"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/information"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/outline_account_circle_24"
+        android:contentDescription="@string/information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/chatting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/outline_textsms_24"
+        android:contentDescription="@string/chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reqlists"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/outline_format_list_bulleted_24"
+        android:contentDescription="@string/list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        tools:layout="@layout/main"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

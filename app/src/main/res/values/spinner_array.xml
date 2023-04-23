@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--서비스 스피너 배열-->
+    <string-array name="services">
+        <item>서비스 목록을 선택해주세요</item><!--title-->
+        <item>장보기</item>
+        <item>벌레잡기</item>
+        <item>반려동물케어</item>
+        <item>과외</item>
+        <item>기타</item>
+    </string-array>
+    <!--결제 방법 스피너 배열-->
+    <string-array name="paymentway">
+        <item>결제 방법을 선택해주세요</item>  <!--title-->
+        <item>만나서 현금결제</item>
+        <item>계좌이체</item>
+    </string-array>
+</resources>

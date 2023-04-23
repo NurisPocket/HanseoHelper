@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Firebaseauth</string>
+    <string name="장보기">장보기</string>
+    <string name="벌레잡기">벌레잡기</string>
+    <string name="반려동물케어">반려동물케어</string>
+    <string name="과외">과외</string>
+    <string name="기타">기타</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="서비스의뢰">서비스의뢰</string>
+    <string name="information">information</string>
+    <string name="chat">chat</string>
+    <string name="list">list</string>
+    <string name="결제방법">결제방법</string>
+    <string name="esc">esc</string>
+    <string name="원">원</string>
+    <string name="항목을선택해주세요">항목을 선택해주세요</string>
+    <string name="결제방법을선택해주세요">결제방법을 선택해주세요</string>
+</resources>
