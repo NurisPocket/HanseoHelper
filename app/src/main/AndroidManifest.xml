@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Firebaseauth">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBBt5GBsUxgDhz3NXpeCiN-K_MS9kkgXPI"/>
+            android:value=""/>
 
         <activity android:name=".views.CreateAccountActivity"
                   android:exported="false"/>
